@@ -1,9 +1,10 @@
 body {
     background-image: url("../img/main_background.jpeg");
     background-size: cover;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
 }
 
 .logo {
-    size: 100px, 100px;
+    width: 30%;
+    height: 30%;
 }
