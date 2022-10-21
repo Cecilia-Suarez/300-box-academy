@@ -1,0 +1,9 @@
+body {
+    background-image: url("../img/main_background.jpeg");
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+.logo {
+    size: 100px, 100px;
+}
