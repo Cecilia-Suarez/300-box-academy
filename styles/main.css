@@ -51,11 +51,9 @@ ol {
     list-style-type: disc;
 }
 
-
-
+/*Cartas*/
 .actividadesDeportivas{
     text-align: center;
-
 }
 
 .actividadesDeportivas div{
@@ -99,6 +97,22 @@ h4{
 .actividadesDeportivas article img{
     height: 6rem;
     position: absolute;
-    top: -35px;
+    top: -45px; 
 }
+
+/*Footer*/
+
+
+
+
+
  
+@media (max-width:375px){
+    .actividadesDeportivas div{
+        flex-direction: column;
+    }
+
+    .actividadesDeportivas div article{
+        width: 100vw;
+    }
+}
