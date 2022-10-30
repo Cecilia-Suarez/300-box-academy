@@ -4,6 +4,7 @@ body {
     background-repeat: no-repeat;
     font-family: 'Be Vietnam Pro', sans-serif;
     padding-top: 15%;
+    margin: 0%;
 }
 
 .logo {
@@ -163,4 +164,71 @@ h4 {
     .logo {
         position: absolute;
     }
+}
+
+/*Footer*/
+footer {
+    background-image: linear-gradient(to left, rgba(255, 253, 253, 0.037), black);
+    bottom: 0%;
+    position: relative;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.texto {
+    bottom: 0%;
+    position: absolute;
+    left: 35%;
+}
+
+.texto img {
+    height: 3%;
+    width: 3%;
+    color: white;
+}
+
+footer p {
+    color: white;
+    margin: 0%;
+    text-shadow: 1px 0 #000000, -1px 0 #000000, 0 1px #000000, 0 -2px #000000,
+        1px 1px #000000, -1px -1px #000000, 1px -1px #000000, -1px 1px #000000;
+    font-size: 80%;
+}
+
+.logos img {
+    height: 10%;
+    width: 10%;
+    padding-left: 10%;
+}
+
+.logos .datosContacto p img {
+    width: 2%;
+    height: 2%;
+}
+
+.navegacion {
+    display: flex;
+    height: 8.821rem;
+    justify-content: space-between;
+    width: 24.546rem;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+}
+
+ul li {
+    padding-bottom: 0.75rem;
+}
+
+ul li a {
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+    text-shadow: 1px 0 #000000, -1px 0 #000000, 0 1px #000000, 0 -2px #000000,
+        1px 1px #000000, -1px -1px #000000, 1px -1px #000000, -1px 1px #000000;
 }
