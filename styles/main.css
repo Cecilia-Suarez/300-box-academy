@@ -7,9 +7,10 @@ body {
     margin: 0%;
 }
 
+
 .logo {
-    width: 30%;
-    height: 45%;
+    width: 24%;
+    height: auto;
     z-index: 4;
     position: fixed;
     left: -4%;
@@ -186,8 +187,11 @@ h4 {
     }
 
     .logo {
-        position: absolute;
+        top: 2px;
+        -webkit-filter: drop-shadow(2px 1px 0 black) drop-shadow(-1px -1px 0 black);
+        filter: drop-shadow(2px 1px 0 black) drop-shadow(-1px -1px 0 black);
     }
+
 }
 
 /*Footer*/
@@ -197,8 +201,9 @@ footer {
     position: relative;
     padding-top: 5%;
     padding-bottom: 5%;
-    justify-content: space-around;
-    align-content: space-around;
+    display: flex;
+
+    display: inline-block;
 }
 
 .texto {
@@ -213,6 +218,11 @@ footer {
     color: white;
 }
 
+.datosContacto img {
+    height: auto;
+    width: 2rem;
+}
+
 footer p {
     color: white;
     margin: 0%;
@@ -222,14 +232,14 @@ footer p {
 }
 
 .logos img {
-    height: 10%;
-    width: 10%;
-    padding-left: 10%;
+    height: auto;
+    width: 2.5rem;
 }
 
-.logos .datosContacto p img {
-    width: 2%;
-    height: 2%;
+.logos {
+    right: 4%;
+    position: absolute;
+    top: 40%;
 }
 
 .navegacion {
@@ -237,19 +247,23 @@ footer p {
     height: 8.821rem;
     justify-content: space-between;
     width: 24.546rem;
+    top: 30%;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-57%)
 }
 
-ul {
+.navegacion ul {
     list-style-type: none;
     margin: 0%;
     padding: 0%;
 }
 
-ul li {
+.navegacion ul li {
     padding-bottom: 0.75rem;
 }
 
-ul li a {
+.navegacion ul li a {
     color: white;
     font-weight: 400;
     text-decoration: none;
