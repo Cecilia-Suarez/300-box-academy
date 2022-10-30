@@ -202,7 +202,6 @@ footer {
     padding-top: 5%;
     padding-bottom: 5%;
     display: flex;
-
     display: inline-block;
 }
 
@@ -216,6 +215,10 @@ footer {
     height: 3%;
     width: 3%;
     color: white;
+}
+
+.datosContacto{
+    padding-left: 3%;
 }
 
 .datosContacto img {
@@ -233,7 +236,8 @@ footer p {
 
 .logos img {
     height: auto;
-    width: 2.5rem;
+    width: 4rem;
+    padding-left: 15%;
 }
 
 .logos {
