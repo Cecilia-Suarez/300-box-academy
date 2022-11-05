@@ -9,12 +9,12 @@ body {
 }
 
 .logo {
-    width: 24%;
+    width: 11%;
     height: auto;
     z-index: 4;
     position: fixed;
-    left: -4%;
-    top: -4%;
+    left: 4%;
+    top: 4%;
 }
 
 header {
@@ -67,14 +67,24 @@ header {
     text-align: center;
 }
 
-h2 {
-    font-size: 2.451rem;
-    font-weight: 700;
+main h2 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    background-image: linear-gradient(to right, #070707, #f90606);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 
-.presentacion p {
-    text-align: justify;
+main p,
+.lista {
     margin: 0% 5% 0% 5%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+    text-shadow: 1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff,
+        1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+    text-align: left;
 }
 
 .lista {
@@ -102,14 +112,14 @@ h3 {
     color: white;
     margin-bottom: 0%;
     text-shadow: 1px 0 #00000050, -1px 0 #00000050, 0 1px #00000050, 0 -1px #00000050,
-            1px 1px #00000050, -1px -1px #00000050, 1px -1px #00000050, -1px 1px #00000050;
+        1px 1px #00000050, -1px -1px #00000050, 1px -1px #00000050, -1px 1px #00000050;
 }
 
 h4 {
     color: white;
     margin-top: 0%;
     text-shadow: 1px 0 #00000050, -1px 0 #00000050, 0 1px #00000050, 0 -1px #00000050,
-            1px 1px #00000050, -1px -1px #00000050, 1px -1px #00000050, -1px 1px #00000050;
+        1px 1px #00000050, -1px -1px #00000050, 1px -1px #00000050, -1px 1px #00000050;
 }
 
 .actividadesDeportivas a {
@@ -191,18 +201,17 @@ h4 {
         font-size: 2.5rem;
     }
 
-    .logo {
-        top: 2px;
-        -webkit-filter: drop-shadow(2px 1px 0 black) drop-shadow(-1px -1px 0 black);
-        filter: drop-shadow(2px 1px 0 black) drop-shadow(-1px -1px 0 black);
+    .separationForMobile {
+        visibility: visible;
+        padding-bottom: 100px;
     }
 
 }
 
 /*Footer*/
-footer{
+footer {
     background-image: linear-gradient(to left, rgba(255, 253, 253, 0.037), black);
-    padding: 3.308rem 1rem;  
+    padding: 3.308rem 1rem;
     display: flex;
 }
 
@@ -211,21 +220,24 @@ footer{
     column-gap: 10%;
 }
 
-.love {
-    width: 1.25rem;
-    height: 1.25rem;
+.texto img {
+    height: 3%;
+    width: 3%;
+    color: white;
 }
 
-.datosContacto img{
+.datosContacto img {
     height: auto;
     width: 2rem;
 }
 
-.datosContacto p, .texto, .navegacion ul li a{
+.datosContacto p,
+.texto,
+.navegacion ul li a {
     color: white;
 }
 
-.texto{
+.texto {
     align-self: flex-end;
     display: flex;
     justify-content: center;
@@ -245,17 +257,17 @@ footer{
     padding: 0%;
 }
 
-.navegacion ul li{
+.navegacion ul li {
     margin-bottom: 1.2rem;
 }
 
-.logos{
+.logos {
     width: fit-content;
     margin-left: 15rem;
     display: flex;
 }
 
-.logos img{
+.logos img {
     height: auto;
     width: 4rem;
     padding-left: 15%;
@@ -263,12 +275,12 @@ footer{
 
 
 @media (max-width: 1584px) {
-    .actividadesDeportivas div{
+    .actividadesDeportivas div {
         flex-direction: column;
         align-items: center;
     }
 
-    footer .columnas{
+    footer .columnas {
         flex-direction: column;
         display: flex;
         align-items: center;
@@ -278,10 +290,8 @@ footer{
         padding-top: 10%;
     }
 
-    .logos{
+    .logos {
         margin: 0%;
         padding-top: 15%;
     }
 }
-
-@media (max-width: )

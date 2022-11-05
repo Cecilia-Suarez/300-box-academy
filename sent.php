@@ -1,27 +1,58 @@
-<!DOCTYPE html>
-<html>
+  <?php
+  $mensaje="Mensaje del formulario de la Página Web";
+  $mensaje.= "\nNombre: ". $_POST['nombre'];
+  $mensaje.= "\nEmail: ".$_POST['mail'];
+  $mensaje.= "\nTelefono: ". $_POST['telefono'];
+  $mensaje.= "\nMensaje: \n".$_POST['mensaje'];
+  $destino= "info@300academiadeboxeo.uy";
+  $remitente = $_POST['mail'];
+  $asunto = "Mensaje enviado por: ".$_POST['nombre'];
+  mail($destino,$asunto,$mensaje,"FROM: $remitente");
+						?>	
 
-<head>
-    <meta charset='UTF-8'>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+<meta charset='UTF-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/e50f04e157.js" crossorigin="anonymous"></script>
-    <title>300 - Box Academy</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>300ADB | Contacto</title>
+	<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="RanGO Project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
+<link href="plugins/colorbox/colorbox.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="styles/contact_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/contact_responsive.css">
+<link href="styles/redes.css" rel="stylesheet" type="text/css">
     <link rel='stylesheet' type='text/css' href='styles/main.css'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="shortcut icon" href="img/logo.ico">
+    <link rel="shortcut icon" href="../img/logo.ico">
+	<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
+<link href="plugins/colorbox/colorbox.css" rel="stylesheet" type="text/css">
+<link href="styles/redes.css" rel="stylesheet" type="text/css">
 </head>
 
+
 <body>
-    <header>
-        <a class="logoref" href="#"><img id="logo" class="logo" src="img/logo.png" alt="Logo"></a>
+
+
+<div class="super_container">
+	
+
+	
+<header>
+        <a href="../index.html"><img id="logo" class="logo" src="../img/logo.png" alt="Logo"></a>
         <nav id="menuNav" class="menuNav">
-            <a href="#">Sobre Nosotros</a>
+            <a href="index.html">Sobre Nosotros</a>
             <a href="pages/boxing.html">Boxeo</a>
             <a href="pages/functional.html">Funcional</a>
             <a href="pages/zumba.html">Zumba</a>
@@ -42,7 +73,7 @@
                 <!-- Links -->
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Sobre Nosotros</a>
+                        <a class="nav-link" href="index.html">Sobre Nosotros</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="pages/boxing.html">Boxeo</a>
@@ -57,7 +88,7 @@
                         <a class="nav-link" href="pages/ipdefense.html">Defensa Personal Integral</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="pages/contact.php">Contacto</a>
+                        <a class="nav-link" href="contact.php">Contacto</a>
                     </li>
                 </ul>
                 <!-- Links -->
@@ -65,58 +96,88 @@
             <!-- Collapsible content -->
         </nav>
         <!--/.Navbar-->
-    </header>
-    <main>
-        <div class="separationForMobile"></div>
-        <section class="presentacion">
-            <article class="sobreNosotros">
-                <h2>Sobre Nosotros</h2><br>
-                <p>Fundado en 2022,<b><i>"300 Academia de Boxeo"</i></b>, nace como un sueño hecho realidad. <br>
-                    Tras practicar en su juventud boxeo e inculcarle el amor hacia este deporte a su hijo más pequeño,
-                    el fundador Suárez abre en el
-                    balneario de Salinas un gimnasio para compartir con la comunidad este y otros deportes.</p>
-            </article> <br>
+</header>
 
-            <p class="sobreNosotros"><b>Nuestros objetivos:</b></p>
-            <article class="lista">
-                <ol>
-                    <li>Promover la práctica de ejercicio físico para el cuidado de la salud integral de l@s usuari@s.
-                    </li>
-                    <li>Incentivar a la comunidad a practicar bajo la supervisión de profesionales las siguientes
-                        actividades
-                        deportivas: boxeo, zumba, funcional y defensa personal imperativa.</li>
-                    <li>Brindar un ambiente recreacional, sano, respetuoso y colaborativo para tod@s l@s usuari@s.</li>
-                </ol>
-            </article>
-        </section>
-        <section class="actividadesDeportivas">
-            <div>
-                <article>
-                    <img src="img/boxeo.png" alt="boxing">
-                    <h3>Boxeo<h3>
-                            <h4>Profesional - Amateur - Infantil</h4>
-                </article>
-                <article>
-                    <img src="img/mujer.png" alt="funcional">
-                    <h3>Funcional</h3>
-                </article>
-                <article>
-                    <img src="img/zumba.png" alt="zumba">
-                    <h3>Zumba</h3>
-                </article>
-                <article>
-                    <img src="img/judo.png" alt="defensa">
-                    <h3>Defensa Personal Integral</h3>
-                </article>
-            </div>
 
-        </section>
-    </main>
-    <footer>
+<div class="icon_boxes">
+	<!-- Contact -->
+
+	<div class="contact">
+		
+		<div class="container">
+			
+			<!-- Google Map Container -->
+
+			<div class="row">
+				
+			</div>
+
+			<div class="row contact_row">
+				<div class="col-lg-8">
+					
+					<!-- Reply -->
+
+					<div class="reply">
+						
+						<div class="reply_title">¡Mensaje enviado! Muchas gracias por comunicarte con nosotros. <br> <a href="index.php"> < Volver </a></div>
+						<div class="reply_form_container">
+							
+							<!-- Reply Form -->
+							
+
+
+							
+							
+
+
+
+						</div>
+					</div>
+
+				</div>
+
+
+				<div class="col-lg-4">
+					
+					<!-- Contact Info -->
+
+					<div class="contact_info">
+
+						<div class="contact_title">Información de Contacto</div>
+						
+						<div class="contact_info_container">
+
+							<div class="logo contact_logo">
+							
+							</div>
+							<div class="address_container clearfix">
+								<div class="contact_info_icon">i</div>
+								<div class="contact_info_content">
+									<ul>
+										<li class="address">Salinas, Canelones</li>
+										<li class="phone">Teléfono: +598 91 312 588</li>
+										<li class="email">info@300academiadeboxeo.uy</li>
+									</ul>									
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</br> </br> <hr/></br></br>
+			<center>
+		 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1638.6055662125088!2d-55.84057334172838!3d-34.77545979195366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDQ2JzMxLjciUyA1NcKwNTAnMjIuMSJX!5e0!3m2!1ses!2suy!4v1597590934992!5m2!1ses!2suy" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center>
+	</div>
+
+	<footer>
         <div class="datosContacto">
-            <p><img src="img/llamada.png" alt="llamada"> +598 91 312 588</p>
-            <p><img src="img/correo-electronico.png" alt="correo"> academiadeboxeo300@gmail.com</p>
-            <p><img src="img/mapas-y-banderas.png" alt="direccion"> Del Daimán Manzana G Solar 13, Salinas, Canelones,
+            <p><img src="../img/llamada.png" alt="llamada"> +598 91 312 588</p>
+            <p><img src="../img/correo-electronico.png" alt="correo"> academiadeboxeo300@gmail.com</p>
+            <p><img src="../img/mapas-y-banderas.png" alt="direccion"> Del Daimán Manzana G Solar 13, Salinas,
+                Canelones,
                 Uruguay.</p>
         </div>
 
@@ -135,13 +196,14 @@
         </div>
 
         <div class="logos">
-            <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" alt="facebook"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png" alt="instagram"></a>
-            <a href="https://wa.me/59891312588" target="_blank"><img src="img/whatsapp.png" alt="whatsapp"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="../img/facebook.png" alt="facebook"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="../img/instagram.png" alt="instagram"></a>
+            <a href="https://wa.me/59891312588" target="_blank"><img src="../img/whatsapp.png" alt="whatsapp"></a>
         </div>
 
         <div class="texto">
-            <p>Made with <img src="img/love.png" alt="love"> by DCCS - Uruguay 2022 - Todos los derechos reservados</p>
+            <p>Made with <img src="../img/love.png" alt="love"> by DCCS - Uruguay 2022 - Todos los derechos reservados
+            </p>
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -192,4 +254,20 @@
             }
         }
     </script>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/greensock/TweenMax.min.js"></script>
+<script src="plugins/greensock/TimelineMax.min.js"></script>
+<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="plugins/greensock/animation.gsap.min.js"></script>
+<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="plugins/slick-1.8.0/slick.js"></script>
+<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="plugins/scrollTo/jquery.scrollTo.min.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="js/about_custom.js"></script>
 </body>
+
+</html>
