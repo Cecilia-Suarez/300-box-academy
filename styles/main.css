@@ -5,8 +5,8 @@ body {
     font-family: 'Be Vietnam Pro', sans-serif;
     padding-top: 15%;
     margin: 0%;
+    width: 100%;
 }
-
 
 .logo {
     width: 24%;
@@ -17,8 +17,7 @@ body {
     top: -4%;
 }
 
-header,
-footer {
+header {
     display: flex;
     width: 100%;
 }
@@ -87,8 +86,6 @@ ol {
     list-style-type: disc;
 }
 
-
-
 .actividadesDeportivas {
     text-align: center;
 }
@@ -104,14 +101,18 @@ h3 {
     font-weight: 700;
     color: white;
     margin-bottom: 0%;
+    text-shadow: 1px 0 #00000050, -1px 0 #00000050, 0 1px #00000050, 0 -1px #00000050,
+            1px 1px #00000050, -1px -1px #00000050, 1px -1px #00000050, -1px 1px #00000050;
 }
 
 h4 {
     color: white;
     margin-top: 0%;
+    text-shadow: 1px 0 #00000050, -1px 0 #00000050, 0 1px #00000050, 0 -1px #00000050,
+            1px 1px #00000050, -1px -1px #00000050, 1px -1px #00000050, -1px 1px #00000050;
 }
 
-.actividadesDeportivas article {
+.actividadesDeportivas a {
     align-items: center;
     justify-content: center;
     background-color: rgba(255, 0, 0, 0.825);
@@ -122,16 +123,20 @@ h4 {
     position: relative;
     transition: 0.3s;
     width: 24rem;
+    color: white;
+    border-radius: 3%;
 }
 
-.actividadesDeportivas article:hover {
+.actividadesDeportivas a:hover {
     transform: scale(1.5);
     transition: 0.3s;
     z-index: 1;
-    box-shadow: 0 0.25rem 0.438rem rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    color: white;
 }
 
-.actividadesDeportivas article img {
+.actividadesDeportivas a img {
     height: 4.375rem;
     position: absolute;
     top: -35px;
@@ -195,55 +200,36 @@ h4 {
 }
 
 /*Footer*/
-footer {
+footer{
     background-image: linear-gradient(to left, rgba(255, 253, 253, 0.037), black);
-    bottom: 0%;
-    position: relative;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding: 3.308rem 1rem;  
     display: flex;
-    display: inline-block;
 }
 
-.texto {
-    bottom: 0%;
-    position: absolute;
-    left: 35%;
+.columnas {
+    column-count: 3;
+    column-gap: 10%;
 }
 
-.texto img {
-    height: 3%;
-    width: 3%;
-    color: white;
+.love {
+    width: 1.25rem;
+    height: 1.25rem;
 }
 
-.datosContacto{
-    padding-left: 3%;
-}
-
-.datosContacto img {
+.datosContacto img{
     height: auto;
     width: 2rem;
 }
 
-footer p {
+.datosContacto p, .texto, .navegacion ul li a{
     color: white;
-    margin: 0%;
-    text-shadow: 1px 0 #000000, -1px 0 #000000, 0 1px #000000, 0 -2px #000000,
-        1px 1px #000000, -1px -1px #000000, 1px -1px #000000, -1px 1px #000000;
-    font-size: 80%;
 }
 
-.logos img {
-    height: auto;
-    width: 4rem;
-    padding-left: 15%;
-}
-
-.logos {
-    right: 4%;
-    position: absolute;
-    top: 40%;
+.texto{
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
 }
 
 .navegacion {
@@ -251,26 +237,51 @@ footer p {
     height: 8.821rem;
     justify-content: space-between;
     width: 24.546rem;
-    top: 30%;
-    left: 50%;
-    position: absolute;
-    transform: translateX(-57%)
 }
 
 .navegacion ul {
-    list-style-type: none;
+    list-style: none;
     margin: 0%;
     padding: 0%;
 }
 
-.navegacion ul li {
-    padding-bottom: 0.75rem;
+.navegacion ul li{
+    margin-bottom: 1.2rem;
 }
 
-.navegacion ul li a {
-    color: white;
-    font-weight: 400;
-    text-decoration: none;
-    text-shadow: 1px 0 #000000, -1px 0 #000000, 0 1px #000000, 0 -2px #000000,
-        1px 1px #000000, -1px -1px #000000, 1px -1px #000000, -1px 1px #000000;
+.logos{
+    width: fit-content;
+    margin-left: 15rem;
+    display: flex;
 }
+
+.logos img{
+    height: auto;
+    width: 4rem;
+    padding-left: 15%;
+}
+
+
+@media (max-width: 1584px) {
+    .actividadesDeportivas div{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .columnas{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+
+    .navegacion {
+        padding-top: 10%;
+    }
+
+    .logos{
+        margin: 0%;
+        padding-top: 15%;
+    }
+}
+
+@media (max-width: )
