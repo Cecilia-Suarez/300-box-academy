@@ -119,7 +119,7 @@
 
 					<div class="reply">
 						
-						<div class="reply_title">¡Mensaje enviado! Muchas gracias por comunicarte con nosotros. <br> <a href="index.php"> < Volver </a></div>
+						<div class="reply_title">¡Mensaje enviado! Muchas gracias por comunicarte con nosotros. <br> <a href="index.html"> < Volver </a></div>
 						<div class="reply_form_container">
 							
 							<!-- Reply Form -->

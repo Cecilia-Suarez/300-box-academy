@@ -79,10 +79,7 @@
             <!-- Collapsible content -->
         </nav>
         <!--/.Navbar-->
-    </header>
-		
-<div class="icon_boxes">
-	
+    </header>	
 	<!-- Contact -->
 
 	<div class="contact">
@@ -109,7 +106,7 @@
 							
 
 
-							<form action="enviado.php" method="post">
+							<form action="sent.php" method="post">
 								<div>
 									<input name="nombre" class="input_field reply_form_name" type="text" placeholder="Nombre" required="required" data-error="Escribe tu nombre">
 									<input name="mail" class="input_field reply_form_email" type="email" placeholder="E-mail" required="required" data-error="Escribe un E-mail válido">
@@ -165,9 +162,10 @@
 			</div>
 
 		</div>
-	</br> </br> <hr/></br></br>
+    </div>
+    </br> </br> <hr/></br></br>
 			<center>
-		 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1638.6055662125088!2d-55.84057334172838!3d-34.77545979195366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDQ2JzMxLjciUyA1NcKwNTAnMjIuMSJX!5e0!3m2!1ses!2suy!4v1597590934992!5m2!1ses!2suy" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center>
+		 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1638.6055662125088!2d-55.84057334172838!3d-34.77545979195366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDQ2JzMxLjciUyA1NcKwNTAnMjIuMSJX!5e0!3m2!1ses!2suy!4v1597590934992!5m2!1ses!2suy" aspect-ratio="1/1" width="50%"  frameborder="0" style="border:0" allowfullscreen></iframe></center>
 	</div>
 
     <footer>
