@@ -170,39 +170,50 @@
 		 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1638.6055662125088!2d-55.84057334172838!3d-34.77545979195366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDQ2JzMxLjciUyA1NcKwNTAnMjIuMSJX!5e0!3m2!1ses!2suy!4v1597590934992!5m2!1ses!2suy" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center>
 	</div>
 
-	<footer>
-        <div class="datosContacto">
-            <p><img src="../img/llamada.png" alt="llamada"> +598 91 312 588</p>
-            <p><img src="../img/correo-electronico.png" alt="correo"> academiadeboxeo300@gmail.com</p>
-            <p><img src="../img/mapas-y-banderas.png" alt="direccion"> Del Daimán Manzana G Solar 13, Salinas,
-                Canelones,
-                Uruguay.</p>
-        </div>
+    <footer>
+        <section class="columnas">
+            <div class="datosContacto">
+                <p><img src="img/llamada.png" alt="llamada"> +598 91 312 588</p>
+                <p><img src="img/correo-electronico.png" alt="correo"> info@300academiadeboxeo.uy</p>
+                <p><img src="img/mapas-y-banderas.png" alt="direccion"> Del Daimán Manzana G Solar 13, Salinas,
+                    Canelones,
+                    Uruguay.</p>
+            </div>
 
-        <div class="navegacion">
-            <ul>
-                <li><a href="#">Sobre Nosotros</a></li>
-                <li><a href="#">Boxeo</a></li>
-                <li><a href="#">Funcional</a></li>
-            </ul>
+            <div class="navegacion">
+                <ul>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Boxeo</a></li>
+                    <li><a href="#">Funcional</a></li>
+                </ul>
 
-            <ul>
-                <li><a href="#">Zumba</a></li>
-                <li><a href="#">Defensa Personal Integral</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </div>
+                <ul>
+                    <li><a href="#">Zumba</a></li>
+                    <li><a href="#">Defensa Personal Integral</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
 
-        <div class="logos">
-            <a href="https://www.facebook.com/" target="_blank"><img src="../img/facebook.png" alt="facebook"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="../img/instagram.png" alt="instagram"></a>
-            <a href="https://wa.me/59891312588" target="_blank"><img src="../img/whatsapp.png" alt="whatsapp"></a>
-        </div>
+            <div class="logos">
+                <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png" alt="instagram"></a>
+                <a href="https://web.whatsapp.com/" target="_blank"><img src="img/whatsapp.png" alt="whatsapp"></a>
+            </div>
+
+            <div>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+        </section>
+
 
         <div class="texto">
-            <p>Made with <img src="../img/love.png" alt="love"> by DCCS - Uruguay 2022 - Todos los derechos reservados
-            </p>
+            <p>Made with <img class="love" src="img/love.png" alt="love"> by DCCS - Uruguay 2022 - Todos los
+                derechos reservados</p>
         </div>
+
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
