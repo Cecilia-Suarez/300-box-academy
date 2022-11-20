@@ -154,7 +154,7 @@
 								<div class="contact_info_icon">i</div>
 								<div class="contact_info_content">
 									<ul>
-										<li class="address">Salinas, Canelones</li>
+										<li class="address">Del Daimán Manzana G Solar 13, Salinas, Canelones, Uruguay</li>
 										<li class="phone">Teléfono: +598 91 312 588</li>
 										<li class="email">info@300academiadeboxeo.uy</li>
 									</ul>									
@@ -184,22 +184,22 @@
 
             <div class="navegacion">
                 <ul>
-                    <li><a href="#">Sobre Nosotros</a></li>
-                    <li><a href="#">Boxeo</a></li>
-                    <li><a href="#">Funcional</a></li>
+                    <li><a href="../index.html">Sobre Nosotros</a></li>
+                    <li><a href="boxing.html">Boxeo</a></li>
+                    <li><a href="functional.html">Funcional</a></li>
                 </ul>
 
                 <ul>
-                    <li><a href="#">Zumba</a></li>
-                    <li><a href="#">Defensa Personal Integral</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="zumba.html">Zumba</a></li>
+                    <li><a href="ipdefense.html">Defensa Personal Integral</a></li>
+                    <li><a href="../contact.php">Contacto</a></li>
                 </ul>
             </div>
 
             <div class="logos">
-                <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" alt="facebook"></a>
-                <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png" alt="instagram"></a>
-                <a href="https://web.whatsapp.com/" target="_blank"><img src="img/whatsapp.png" alt="whatsapp"></a>
+                <a href="https://www.facebook.com/profile.php?id=100087273114656" target="_blank"><img src="../img/facebook.png" alt="facebook"></a>
+                <a href="https://instagram.com/300academiadeboxeo?igshid=YmMyMTA2M2Y=" target="_blank"><img src="../img/instagram.png" alt="instagram"></a>
+                <a href="https://wa.me/59891312588" target="_blank"><img src="../img/whatsapp.png" alt="whatsapp"></a>
             </div>
 
             <div>

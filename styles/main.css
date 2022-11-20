@@ -29,10 +29,12 @@ header {
     width: 100%;
     height: 15%;
     display: flex;
-    justify-content: right;
+    width: 100%;
+    justify-content: flex-end;
     align-items: center;
     z-index: 3;
 }
+
 
 .menuNav a {
     text-decoration: none;
@@ -46,6 +48,7 @@ header {
 
 .menuNav a:hover {
     color: rgba(255, 0, 0, 0.825);
+    text-decoration: none;
     transition: 0.5s;
     transform: scale(1.1);
     display: flex;
@@ -67,8 +70,17 @@ header {
     text-align: center;
 }
 
-main h2 {
+main h2{
     font-size: 3.5rem;
+    font-weight: 600;
+    background-image: linear-gradient(to right, #070707, #f90606);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+main h5{
+    font-size:2.5rem;
     font-weight: 600;
     background-image: linear-gradient(to right, #070707, #f90606);
     color: transparent;
@@ -89,7 +101,7 @@ main p,
 .lista {
     margin: 0% 5% 0% 5%;
     font-size: 1.2rem;
-    font-weight: bold;
+    font-weight: 600;
     color: black;
     text-shadow: 1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff,
         1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
@@ -114,17 +126,12 @@ main .presentacion ol {
     justify-content: center;
 }
 
-.actividadesDeportivas {
-    text-align: center;
+.carrusel{
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
-.actividadesDeportivas div {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-}
-
-h3 {
+.carousel-inner a h3 {
     font-size: 2.451rem;
     font-weight: 700;
     color: white;
@@ -133,41 +140,16 @@ h3 {
         1px 1px #00000050, -1px -1px #00000050, 1px -1px #00000050, -1px 1px #00000050;
 }
 
-h4 {
+.carousel-inner a h4 {
     color: white;
     margin-top: 0%;
     text-shadow: 1px 0 #00000050, -1px 0 #00000050, 0 1px #00000050, 0 -1px #00000050,
         1px 1px #00000050, -1px -1px #00000050, 1px -1px #00000050, -1px 1px #00000050;
 }
 
-.actividadesDeportivas a {
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(255, 0, 0, 0.825);
-    display: flex;
-    flex-direction: column;
-    height: 13.688rem;
-    margin: 4.625rem 0 2.813rem 0;
-    position: relative;
-    transition: 0.3s;
-    width: 24rem;
-    color: white;
-    border-radius: 3%;
-}
-
-.actividadesDeportivas a:hover {
-    transform: scale(1.5);
-    transition: 0.3s;
-    z-index: 1;
-    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.25);
-    text-decoration: none;
-    color: white;
-}
-
-.actividadesDeportivas a img {
-    height: 4.375rem;
-    position: absolute;
-    top: -35px;
+.carousel-inner a img{
+    width: 40%;
+    height: auto;
 }
 
 .navbar {
@@ -176,54 +158,20 @@ h4 {
 
 }
 
-@media (max-width: 890px) {
-    .menuNav {
-        display: none;
-    }
+.presentacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-    header .navbar {
-        top: 0%;
-        right: 0%;
-        width: 100%;
-        position: fixed;
-        display: flex;
-        visibility: visible;
-        align-items: right;
-        justify-content: right;
-        text-align: right;
-        background-image: linear-gradient(to left, rgba(255, 253, 253, 0.037), black);
-        text-shadow: 2px 0 #000000, -2px 0 #000000, 0 2px #000000, 0 -2px #000000,
-            1px 1px #000000, -1px -1px #000000, 1px -1px #000000, -1px 1px #000000;
-        flex-wrap: wrap;
-        z-index: 2;
-    }
+.presentacion p{
+    align-self: start;
+}
 
-    .navbar-dark .navbar-toggler {
-        color: rgb(255, 255, 255, 1);
-        border-color: rgba(255, 0, 0, 0.825);
-        background-color: black;
-    }
-
-    .dark-blue-text {
-        color: white;
-    }
-
-    .nav-link {
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-        color: white;
-        font-size: 1.2rem;
-        font-weight: bold;
-    }
-
-    .fa-1x {
-        font-size: 2.5rem;
-    }
-
-    .separationForMobile {
-        visibility: visible;
-        padding-bottom: 100px;
-    }
-
+.presentacion .imgReference{
+    width: 50%;
+    height: auto;
+    
 }
 
 /*Footer*/
@@ -297,8 +245,165 @@ footer {
     box-shadow: rgba(255, 0, 0, 0.792) 1px 4px 10px;
 }
 
+/*Responsive*/
+@media (max-width: 375px){
+    .navegacion{
+        width: 21rem;
+    }
+}
 
-@media (max-width: 1584px) {
+@media (max-width: 600px){
+    .actividadesDeportivas {
+        text-align: center;
+    }
+    
+    .actividadesDeportivas div {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;   
+    }
+
+    .actividadesDeportivas a {
+        justify-content: flex-end;
+        display: flex;
+        flex-direction: column;
+        height: 13.688rem;
+        margin: 4.625rem 0 2.813rem 0;
+        position: relative;
+        transition: 0.3s;
+        width: 24rem;
+        color: white;
+        border-radius: 3%;
+        text-shadow: 1px 0 #00000050, -1px 0 #00000050, 0 1px #00000050, 0 -1px #00000050,
+        1px 1px #00000050, -1px -1px #00000050, 1px -1px #00000050, -1px 1px #00000050;  
+    }
+
+    .box{
+        background-size: cover;
+        background-image: url("../img/box-index.jpg");
+    }
+
+    .fun{
+        background-size: cover;
+        background-image: url("../img/fun-index.jpg");
+    }
+
+    .zum{
+        background-size: cover;
+        background-image: url("../img/zumba-index.jpg");
+    }
+
+    .dfi{
+        background-size: cover;
+        background-image: url("../img/dfi-index.jpg");
+    }
+    
+    .actividadesDeportivas a:hover {
+        transform: scale(1.5);
+        transition: 0.3s;
+        z-index: 1;
+        box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.25);
+        text-decoration: none;
+        color: white;
+    }
+    
+    .carrusel{
+        display: none;
+    }
+
+    footer{
+        padding: 1.5rem;
+    }
+
+    .texto p{
+        text-align: center;
+    }
+
+    .columnas .br{
+        display: none;
+    }
+
+    .logos{
+        padding-bottom: 1rem;
+    }
+
+}
+
+@media (min-width: 700px){
+    .actividadesDeportivas{
+        display: none;
+    }
+
+    .carousel-inner a img{
+        width: 60%;
+        height: auto;
+    }
+
+    .carousel-inner a h3 {
+        font-size: 2rem;
+    }
+
+    footer{
+        padding: 2rem;
+    }
+
+    .texto p{
+        text-align: center;
+    }
+
+    .columnas .br{
+        display: none;
+    }
+
+}
+
+@media (max-width: 890px) {
+    .menuNav {
+        display: none;
+    }
+
+    header .navbar {
+        top: 0%;
+        right: 0%;
+        width: 100%;
+        position: fixed;
+        display: flex;
+        visibility: visible;
+        justify-content: flex-end;
+        text-align: right;
+        background-image: linear-gradient(to left, rgba(255, 253, 253, 0.037), black);
+        text-shadow: 2px 0 #000000, -2px 0 #000000, 0 2px #000000, 0 -2px #000000,
+            1px 1px #000000, -1px -1px #000000, 1px -1px #000000, -1px 1px #000000;
+        flex-wrap: wrap;
+        z-index: 2;
+    }
+
+    .navbar-dark .navbar-toggler {
+        color: rgb(255, 255, 255, 1);
+        border-color: rgba(255, 0, 0, 0.825);
+        background-color: black;
+    }
+
+    .dark-blue-text {
+        color: white;
+    }
+
+    .nav-link {
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .fa-1x {
+        font-size: 2.5rem;
+    }
+
+    .separationForMobile {
+        visibility: visible;
+        padding-bottom: 100px;
+    }
+
     .actividadesDeportivas div {
         flex-direction: column;
         align-items: center;
@@ -321,5 +426,25 @@ footer {
     .logos {
         margin: 0%;
         padding-top: 15%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .columnas .br{
+        display: flex;
+    }
+
+    .columnas .logos{
+        margin-left: 5rem;
+    }
+
+    .navegacion {
+        width: 22rem;
+    }
+}
+
+@media (min-width: 1440px){
+    .columnas .logos{
+        margin-left: 11rem;
     }
 }
